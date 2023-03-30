@@ -7,3 +7,5 @@ export { default as Hotels } from "./Hotels/Hotels";
 export { default as Login } from "./Login/Login";
 export { default as SignUp } from "./SignUp/SignUp";
 export { default as LanguageEN } from "./LanguageEN/LanguageEN";
+export { default as Category } from "./Category/Category";
+export { default as Banner } from "./Banner/Banner";
