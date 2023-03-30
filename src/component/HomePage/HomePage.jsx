@@ -1,13 +1,28 @@
 import React from "react";
-import { Banner, Category, Desitnations } from "../index";
+
+import {
+  Banner,
+  Bookings,
+  Category,
+  ContactUs,
+  Desitnations,
+  Footer,
+  LogoNav,
+  Testimonials,
+} from "..";
 
 const HomePage = () => {
   console.log("HOMEPAGE");
   return (
     <>
-      <Banner/>
+      <Banner />
       <Category />
       <Desitnations />
+      <Bookings />
+      <Testimonials />
+      <LogoNav />
+      <ContactUs />
+      <Footer />
     </>
   );
 };

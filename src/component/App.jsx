@@ -1,6 +1,7 @@
 import React from "react";
 import { CssBaseline } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
+import Decore from "../assets/Decore.png";
 import {
   NavBar,
   Bookings,
@@ -17,7 +18,14 @@ import useStyles from "./styles";
 const App = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root}
+      style={{
+        backgroundImage: `url(${Decore})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPositionX: "right",
+      }}
+    >
       <CssBaseline />
       <NavBar />
       <main className={classes.content}>

@@ -9,3 +9,7 @@ export { default as SignUp } from "./SignUp/SignUp";
 export { default as LanguageEN } from "./LanguageEN/LanguageEN";
 export { default as Category } from "./Category/Category";
 export { default as Banner } from "./Banner/Banner";
+export { default as Footer } from "./Footer/Footer";
+export { default as LogoNav } from "./LogoNav/LogoNav";
+export { default as Testimonials } from "./Testimonials/Testimonials";
+export { default as ContactUs } from "./ContactUs/ContactUs";

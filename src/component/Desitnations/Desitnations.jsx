@@ -2,7 +2,7 @@ import React from "react";
 import Desti1 from "../../assets/desti1.png";
 import Desti2 from "../../assets/desti2.png";
 import Desti3 from "../../assets/desti3.png";
-import Dd from "../../assets/dd.png";
+import NearMeIcon from "@mui/icons-material/NearMe";
 
 const Desitnations = () => {
   return (
@@ -34,7 +34,7 @@ const Desitnations = () => {
                 <span>$5,42k</span>
               </span>
               <span className="flex gap-3">
-                <img src={Dd} alt="" width={15} height={10} />
+                <NearMeIcon />
                 <p>10 Days Trip</p>
               </span>
             </div>
@@ -47,7 +47,7 @@ const Desitnations = () => {
                 <span>$4.2k</span>
               </span>
               <span className="flex gap-3">
-                <img src={Dd} alt="" width={15} height={10} />
+                <NearMeIcon />
                 <p>12 Days Trip</p>
               </span>
             </div>
@@ -60,7 +60,7 @@ const Desitnations = () => {
                 <span>$15k</span>
               </span>
               <span className="flex gap-3">
-                <img src={Dd} alt="" width={15} height={10} />
+                <NearMeIcon />
                 <p>28 Days Trip</p>
               </span>
             </div>

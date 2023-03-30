@@ -1,5 +1,6 @@
 import React from "react";
 import TravellImg from "../../assets/Traveller1.png";
+import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 
 const Banner = () => {
   return (
@@ -39,6 +40,7 @@ const Banner = () => {
           Find out more
         </button>
         <button
+          className=""
           style={{
             backgroundColor: "gray",
             borderRadius: "10px",
@@ -49,10 +51,16 @@ const Banner = () => {
             marginLeft: "10px",
           }}
         >
+          <PlayCircleOutlineIcon
+            style={{ marginRight: "2px", marginBottom: "3px" }}
+          />
           Play Demo
         </button>
       </div>
-      <div className="w-1/2">
+      <div
+        className="w-1/2"
+       
+      >
         <img src={TravellImg} alt="" />
       </div>
     </div>
