@@ -1,6 +1,6 @@
 import React from "react";
-import TravellImg from "../../assets/Traveller1.png";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import TravellImg from "../../assets/Traveller1.png";
 
 const Banner = () => {
   return (
@@ -57,10 +57,7 @@ const Banner = () => {
           Play Demo
         </button>
       </div>
-      <div
-        className="w-1/2"
-       
-      >
+      <div className="w-1/2">
         <img src={TravellImg} alt="" />
       </div>
     </div>

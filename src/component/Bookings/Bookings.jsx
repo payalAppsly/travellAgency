@@ -2,16 +2,21 @@ import React from "react";
 import EnergySavingsLeafIcon from "@mui/icons-material/EnergySavingsLeaf";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import LuggageIcon from "@mui/icons-material/Luggage";
+import LocalAtmIcon from "@mui/icons-material/LocalAtm";
+import LocalAirportIcon from "@mui/icons-material/LocalAirport";
+import GpsFixedIcon from "@mui/icons-material/GpsFixed";
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import LinearProgress from "@mui/material/LinearProgress";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+
 import Image2 from "../../assets/image2.jpg";
 import Image3 from "../../assets/image3.png";
-
-import LinearProgress from "@mui/material/LinearProgress";
 
 const Bookings = () => {
   console.log("Bookings");
   return (
-    <div className="flex my-10 mx-auto items-center">
-      <div className="flex flex-col gap-y-8">
+    <div className="flex my-10 mx-auto items-center w-10/12">
+      <div className="flex flex-col gap-y-8 w-3/5 ml-4">
         <div>
           <h5
             className="text-lg font-semibold"
@@ -34,11 +39,22 @@ const Bookings = () => {
               height: "50px",
               backgroundColor: "#F0BB1F",
               borderRadius: "15px",
+              color: "white",
             }}
-          ></div>
+          >
+            <GpsFixedIcon style={{ marginLeft: "12px", marginTop: "12px" }} />
+          </div>
           <div>
-            <p>Choose Destination</p>
-            <p>
+            <p
+              className="text-lg font-bold"
+              style={{ color: "#5E6282", fontFamily: "Poppins" }}
+            >
+              Choose Destination
+            </p>
+            <p
+              className="w-80 font-medium text-base"
+              style={{ color: "#5E6282", fontFamily: "Poppins" }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
               tortor tempus.{" "}
             </p>
@@ -51,11 +67,22 @@ const Bookings = () => {
               height: "50px",
               backgroundColor: "#F15A2B",
               borderRadius: "15px",
+              color: "white",
             }}
-          ></div>
+          >
+            <LocalAtmIcon style={{ marginLeft: "12px", marginTop: "12px" }} />
+          </div>
           <div>
-            <p>Make Payment</p>
-            <p>
+            <p
+              className="text-lg font-bold"
+              style={{ color: "#5E6282", fontFamily: "Poppins" }}
+            >
+              Make Payment
+            </p>
+            <p
+              className="w-80 font-medium text-base"
+              style={{ color: "#5E6282", fontFamily: "Poppins" }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
               tortor tempus.{" "}
             </p>
@@ -68,37 +95,60 @@ const Bookings = () => {
               height: "50px",
               backgroundColor: "#006380",
               borderRadius: "15px",
+              color: "white",
             }}
-          ></div>
+          >
+            <LocalAirportIcon
+              style={{ marginLeft: "12px", marginTop: "12px" }}
+            />
+          </div>
           <div>
-            <p>Reach Airport on Selected Date</p>
-            <p>
+            <p
+              className="text-lg font-bold"
+              style={{ color: "#5E6282", fontFamily: "Poppins" }}
+            >
+              Reach Airport on Selected Date
+            </p>
+            <p
+              className="w-80 font-medium text-base"
+              style={{ color: "#5E6282", fontFamily: "Poppins" }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
               tortor tempus.{" "}
             </p>
           </div>
         </div>
       </div>
-      <div>
+      <div className="w-2/5" style={{ position: "relative" }}>
         <div
-          className="shadow-xl rounded-2xl"
+          className="shadow-xl rounded-2xl w-80 p-4"
           style={{
             background: "#FFFFFF",
-            position: "relative",
           }}
         >
           <img src={Image2} alt="" />
-          <div>
-            <p>Trip To Greece</p>
-            <p>14-29 June</p>
-            <p>by Robbin joseph</p>
-            <span className="flex">
+          <div className="flex flex-col gap-y-2">
+            <p
+              className="text-lg font-semibold"
+              style={{ color: "#080809", fontFamily: "Poppins" }}
+            >
+              Trip To Greece
+            </p>
+            <p
+              className="text-base font-semibold"
+              style={{ color: "#84829A", fontFamily: "Poppins" }}
+            >
+              14-29 June | by Robbin joseph
+            </p>
+
+            <span className="flex gap-x-4">
               <span
                 style={{
                   width: "35px",
                   height: "35px",
-                  backgroundColor: "#84829A",
                   borderRadius: "50%",
+                  backgroundColor: "#F5F5F5",
+                  color: "#84829A",
                 }}
               >
                 <EnergySavingsLeafIcon style={{ margin: "4px" }} />
@@ -107,8 +157,9 @@ const Bookings = () => {
                 style={{
                   width: "35px",
                   height: "35px",
-                  backgroundColor: "#84829A",
                   borderRadius: "50%",
+                  backgroundColor: "#F5F5F5",
+                  color: "#84829A",
                 }}
               >
                 <LuggageIcon style={{ margin: "4px" }} />
@@ -117,23 +168,37 @@ const Bookings = () => {
                 style={{
                   width: "35px",
                   height: "35px",
-                  backgroundColor: "#84829A",
                   borderRadius: "50%",
+                  backgroundColor: "#F5F5F5",
+                  color: "#84829A",
                 }}
               >
                 <NearMeIcon style={{ margin: "4px" }} />
               </span>
             </span>
-            <p>24 people going</p>
+            <p
+              className="text-base font-semibold items-center flex gap-x-1"
+              style={{ color: "#84829A", fontFamily: "Poppins" }}
+            >
+              <ApartmentIcon />
+              <span>24 people going</span>
+              <FavoriteBorderOutlinedIcon
+                style={{
+                  marginLeft: "auto",
+                  color: "blue",
+                  marginRight: "20px",
+                }}
+              />
+            </p>
           </div>
         </div>
         <div
-          className="shadow-xl rounded-2xl flex gap-x-4"
+          className="shadow-xl rounded-2xl flex gap-x-4 w-56"
           style={{
             background: "#FFFFFF",
             position: "absolute",
-            left: "60%",
-            top: "35%",
+            left: "35%",
+            top: "55%",
             padding: "10px",
           }}
         >
@@ -141,9 +206,23 @@ const Bookings = () => {
             <img src={Image3} alt="" style={{ borderRadius: "50%" }} />
           </div>
           <div>
-            <p>Ongoing</p>
-            <p>Trip to rome</p>
-            <p>40% completed</p> <LinearProgress />
+            <p
+              className="text-base font-semibold"
+              style={{ color: "#84829A", fontFamily: "Poppins" }}
+            >
+              Ongoing
+            </p>
+            <p
+              className="text-lg font-semibold"
+              style={{ color: "#080809", fontFamily: "Poppins" }}
+            >
+              Trip to rome
+            </p>
+            <p className="text-base" style={{ fontFamily: "Poppins" }}>
+              <span style={{ color: "#8A79DF", fontWeight: "bold" }}>40%</span>
+              &nbsp; completed
+            </p>{" "}
+            <LinearProgress />
           </div>
         </div>
       </div>

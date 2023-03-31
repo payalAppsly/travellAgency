@@ -1,8 +1,8 @@
 import React from "react";
+import NearMeIcon from "@mui/icons-material/NearMe";
 import Desti1 from "../../assets/desti1.png";
 import Desti2 from "../../assets/desti2.png";
 import Desti3 from "../../assets/desti3.png";
-import NearMeIcon from "@mui/icons-material/NearMe";
 
 const Desitnations = () => {
   return (
