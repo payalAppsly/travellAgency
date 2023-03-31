@@ -15,7 +15,7 @@ import Image3 from "../../assets/image3.png";
 const Bookings = () => {
   console.log("Bookings");
   return (
-    <div className="flex my-10 mx-auto items-center w-10/12">
+    <div className="flex my-10 mx-auto items-center w-10/12 p-10">
       <div className="flex flex-col gap-y-8 w-3/5 ml-4">
         <div>
           <h5
@@ -119,7 +119,10 @@ const Bookings = () => {
           </div>
         </div>
       </div>
-      <div className="w-2/5" style={{ position: "relative" }}>
+      <div
+        className="w-2/5"
+        style={{ position: "relative",}}
+      >
         <div
           className="shadow-xl rounded-2xl w-80 p-4"
           style={{
@@ -151,7 +154,7 @@ const Bookings = () => {
                   color: "#84829A",
                 }}
               >
-                <EnergySavingsLeafIcon style={{ margin: "4px" }} />
+                <EnergySavingsLeafIcon style={{ margin: "5px" }} />
               </span>
               <span
                 style={{
@@ -162,7 +165,7 @@ const Bookings = () => {
                   color: "#84829A",
                 }}
               >
-                <LuggageIcon style={{ margin: "4px" }} />
+                <LuggageIcon style={{ margin: "5px" }} />
               </span>
               <span
                 style={{
@@ -173,7 +176,7 @@ const Bookings = () => {
                   color: "#84829A",
                 }}
               >
-                <NearMeIcon style={{ margin: "4px" }} />
+                <NearMeIcon style={{ margin: "5px" }} />
               </span>
             </span>
             <p
@@ -185,7 +188,7 @@ const Bookings = () => {
               <FavoriteBorderOutlinedIcon
                 style={{
                   marginLeft: "auto",
-                  color: "blue",
+                  color: "#4152CA",
                   marginRight: "20px",
                 }}
               />

@@ -19,11 +19,13 @@ const App = () => {
   const classes = useStyles();
   return (
     <div
-      className={classes.root}
+      className="container mx-auto"
+      // className={classes.root}
       style={{
         backgroundImage: `url(${Decore})`,
         backgroundRepeat: "no-repeat",
         backgroundPositionX: "right",
+        border: "1px solid black",
       }}
     >
       <CssBaseline />
