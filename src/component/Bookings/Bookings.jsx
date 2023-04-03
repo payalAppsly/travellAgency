@@ -11,11 +11,20 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 
 import Image2 from "../../assets/image2.jpg";
 import Image3 from "../../assets/image3.png";
+import BookBack from "../../assets/bookBack.png";
 
 const Bookings = () => {
   console.log("Bookings");
   return (
-    <div className="flex my-10 mx-auto items-center w-10/12 p-10">
+    <div
+      className="flex my-20 mx-auto items-center w-10/12 p-10"
+      style={{
+        backgroundImage: `url(${BookBack})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPositionY: "top",
+        backgroundPositionX: "right",
+      }}
+    >
       <div className="flex flex-col gap-y-8 w-3/5 ml-4">
         <div>
           <h5
@@ -121,7 +130,9 @@ const Bookings = () => {
       </div>
       <div
         className="w-2/5"
-        style={{ position: "relative",}}
+        style={{
+          position: "relative",
+        }}
       >
         <div
           className="shadow-xl rounded-2xl w-80 p-4"
@@ -132,13 +143,13 @@ const Bookings = () => {
           <img src={Image2} alt="" />
           <div className="flex flex-col gap-y-2">
             <p
-              className="text-lg font-semibold"
+              className="text-lg font-medium"
               style={{ color: "#080809", fontFamily: "Poppins" }}
             >
               Trip To Greece
             </p>
             <p
-              className="text-base font-semibold"
+              className="text-base font-medium"
               style={{ color: "#84829A", fontFamily: "Poppins" }}
             >
               14-29 June | by Robbin joseph
@@ -180,7 +191,7 @@ const Bookings = () => {
               </span>
             </span>
             <p
-              className="text-base font-semibold items-center flex gap-x-1"
+              className="text-base font-medium items-center flex gap-x-1"
               style={{ color: "#84829A", fontFamily: "Poppins" }}
             >
               <ApartmentIcon />
@@ -210,13 +221,13 @@ const Bookings = () => {
           </div>
           <div>
             <p
-              className="text-base font-semibold"
+              className="text-base font-medium"
               style={{ color: "#84829A", fontFamily: "Poppins" }}
             >
               Ongoing
             </p>
             <p
-              className="text-lg font-semibold"
+              className="text-lg font-medium"
               style={{ color: "#080809", fontFamily: "Poppins" }}
             >
               Trip to rome

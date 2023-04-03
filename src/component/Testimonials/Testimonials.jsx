@@ -21,10 +21,10 @@ const Testimonials = () => {
             What people say about Us.
           </p>
         </div>
-        <div className="div flex gap-x-10">
-          <CircleIcon />
-          <CircleIcon style={{ color: "grey" }} />
-          <CircleIcon style={{ color: "grey" }} />
+        <div className="div flex gap-x-5">
+          <CircleIcon style={{ fontSize: "14px" }} />
+          <CircleIcon style={{ color: "grey", fontSize: "14px" }} />
+          <CircleIcon style={{ color: "grey", fontSize: "14px" }} />
         </div>
       </div>
       <div
@@ -48,7 +48,11 @@ const Testimonials = () => {
         </div>
         <div
           className="rounded-xl shadow-2xl w-4/5 p-5 z-0"
-          style={{ position: "absolute", top: "20%" }}
+          style={{
+            position: "absolute",
+            top: "20%",
+            border: "2px solid #F7F7F7",
+          }}
         >
           <p className="text-base font-medium	my-2">
             “On the Windows talking painted pasture yet its express parties use.

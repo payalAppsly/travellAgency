@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex w-3/4 justify-evenly">
           <div>
             <p className="text-4xl font-semibold" style={{ color: "#181E4B" }}>
-              Jad<span style={{backgroundColor:""}}>oo</span>.
+              Jad<span style={{ backgroundColor: "" }}>oo</span>.
             </p>
             <p
               className="text-base font-medium w-52 my-2"
@@ -82,8 +82,10 @@ const Footer = () => {
                 width: "40px",
                 height: "40px",
                 borderRadius: "50%",
-                backgroundColor: "#C68BF0",
+                // backgroundColor: "#C68BF0",
                 boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
+                background:
+                  "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)",
               }}
             >
               <InstagramIcon style={{ margin: "8px" }} />
@@ -101,7 +103,9 @@ const Footer = () => {
             </span>
           </span>
           <span>
-            <p  className="text-xl font-medium" style={{ color: "#5E6282" }}>Discover our app</p>
+            <p className="text-xl font-medium" style={{ color: "#5E6282" }}>
+              Discover our app
+            </p>
           </span>
           <span className="flex gap-x-2">
             <div className="bg-black text-white rounded-2xl flex px-2 py-1 items-center gap-x-2">

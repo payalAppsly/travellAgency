@@ -4,8 +4,8 @@ import {
   Banner,
   Bookings,
   Category,
-  ContactUs,
-  Desitnations,
+  Subscribe,
+  Destinations,
   Footer,
   LogoNav,
   Testimonials,
@@ -17,11 +17,11 @@ const HomePage = () => {
     <>
       <Banner />
       <Category />
-      <Desitnations />
+      <Destinations />
       <Bookings />
       <Testimonials />
       <LogoNav />
-      <ContactUs />
+      <Subscribe />
       <Footer />
     </>
   );
