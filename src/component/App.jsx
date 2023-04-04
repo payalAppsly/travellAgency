@@ -13,14 +13,11 @@ import {
   SignUp,
   SelectLanguage,
 } from "./index";
-import useStyles from "./styles";
 
 const App = () => {
-  const classes = useStyles();
   return (
     <div
       className="container mx-auto"
-      // className={classes.root}
       style={{
         backgroundImage: `url(${RootBack})`,
         backgroundRepeat: "no-repeat",
@@ -30,8 +27,7 @@ const App = () => {
     >
       <CssBaseline />
       <NavBar />
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
+      <main>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/bookings" element={<Bookings />} />
